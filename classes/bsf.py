@@ -46,7 +46,7 @@ class BFS(Search):
                         return (vertex.x, vertex.y)
                     else:
                         return (n.x, n.y)
-                if n.ch != "#" and n.ch != '?' and n not in self.reached:
+                if (n.ch == 'T' or n.ch == '.') and n not in self.reached:
                     if self.verbose:
                         self.printError("Adding (" + str(n.x) + ", " + str(n.y) + "): " + str(n.ch) + " to Frontier")
                     self.frontier.append(n)
