@@ -382,4 +382,6 @@ def main():
 
             # pop next command and execute it
             print(game.nextMove())
-main()
+            
+if __name__ == '__main__':
+    main()
